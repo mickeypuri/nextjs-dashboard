@@ -206,7 +206,7 @@ export default async function Page (props: {
       console.log(error);
     }
 
-    units = temperatureData?.hourly_units.temperature_2m;
+    units = temperatureData?.hourly_units.temperature_2m || "";
 
   }
 
