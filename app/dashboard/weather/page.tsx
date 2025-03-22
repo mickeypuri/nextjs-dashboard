@@ -13,7 +13,10 @@ export default async function Page (props: {
   const longitude = searchParams?.longitude || "";
   const latitude = searchParams?.latitude || "";
 
-  let temperatureData : { hourly: {time: string[], temperature_2m: number []}, hourly_units: { temperature_2m: string}} | null = null;
+  let temperatureData : { 
+    hourly: {time: string[], 
+    temperature_2m: number []}, 
+    hourly_units: { temperature_2m: string}} | null = null;
   
   let units = "";
 
